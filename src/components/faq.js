@@ -14,11 +14,11 @@ const Faq = () => {
   return (
     <div className="wrapper">
       <div className="accordian">
-        <div className="faqs">FAQs</div>
+        <h1 className="faqs">FAQs</h1>
         {data.map((item, i) => (
           <div className="item">
             <div className="title" onClick={() => toggle(i)}>
-              <h2>{item.question}</h2>
+              <h3 className="hthree">{item.question}</h3>
               <span className="plus">{selected === i ? "-" : "+"}</span>
             </div>
             <div className={selected === i ? "content show" : "content"}>
