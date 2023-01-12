@@ -5,7 +5,7 @@ body {
 
 .faqs {
   color: #f9363a;
-
+  margin-bottom: 0px;
   width: 233px;
 
   left: 197px;
@@ -13,7 +13,7 @@ body {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
-  font-size: 96px;
+  font-size: 9.6vmin;
 }
 
 .wrapper {
@@ -39,6 +39,7 @@ body {
 }
 
 .title {
+  font-size: 3vmin;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,6 +47,7 @@ body {
 }
 
 .content {
+  font-size: 2.5vmin;
   max-height: 0;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
@@ -56,6 +58,7 @@ body {
 }
 
 .content.show {
+  font-size: 2.5vmin;
   height: auto;
   max-height: 9999px;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
