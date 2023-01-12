@@ -1,0 +1,62 @@
+body {
+  text-align: left !important;
+  background-color: #0e061d;
+}
+
+.faqs {
+  color: #f9363a;
+
+  width: 233px;
+
+  left: 197px;
+  margin-left: 10px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+}
+
+.wrapper {
+  color: #ffffff;
+  display: flex;
+  height: 140vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordian {
+  min-width: 250px;
+  width: 700px;
+  padding: 100px;
+}
+
+.item {
+  background: #0e061d;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  border-bottom: #ffffff 2px solid;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.plus {
+  font-size: 50px;
+}
+
+.content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
